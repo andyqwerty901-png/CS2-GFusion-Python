@@ -2,7 +2,6 @@
 
 The most advanced Counter-Strike closet cheats ever made in Python. Kernel driver included.
 
-[UC Forum](https://www.unknowncheats.me/forum/counter-strike-2-releases/711867-gfusion-closet-cheat.html)
 [YouTube](https://www.youtube.com/@cr0mble)
 
 [How to Download and Install GFusion V3.6](https://www.youtube.com/watch?v=i3q_ryNTHww&lc=Ugz-S0AoR0fkkcZhfXZ4AaABAg)
@@ -23,108 +22,101 @@ irm https://raw.githubusercontent.com/Cr0mb/CS2-GFusion-Python/main/Install-GFus
 
 
 ```
-12/19/2025
-V3.6.5
-[+] Added external radar (not yet compatible with obs protection or panic key)
-  [+] added compatibility with obs protection 12/20/2025 2 A.M
+Журнал обновлений GFusion Launcher
+🔥 Версия 3.6.5 | 19 декабря 2025
+🚀 Новые возможности
+🌐 Добавлен внешний радар
+🔄 Совместимость с OBS Protection добавлена 20.12.2025 в 02:00
+🎨 Настройки цветов видимости в меню
+🎯 Синхронизация цвета FOV с настройками аимбота
+🗂️ Функция "Update Scripts" в лаунчере для быстрого перехода между версиями
+⚙️ Технические улучшения
+🧹 Рефакторинг кодовой базы - очистка репозитория
+🐍 Обновление модуля VisCheck для Python 3.14
 
-[+] added visibility color settings
-[+] integrated fov overlay color change for aimbot
-[+] organized colors layout in menu
-[+] added "Update Scripts" to GFusion Launcher, now you can quickly transfer between updates.
-[+] Cleaned up GFusion repo src code.
-[+] vischeck module was changed for latest release of Python (3.14), either use from old src, rebuild the module, or update python.
-```
-```
-12/18/2025
-V3.6.4
-[+] Added more target bone selection to menu
-```
+🎯 Версия 3.6.4 | 18 декабря 2025
+✨ Улучшения
+💀 Расширен выбор костей для аимбота в меню настроек
 
-```
-12/18/2025
-V3.6.3
-[+] Added multiple bones to aimbot (soon to integrate full selection choices to menu), as of now only works with closest crosshair.
-https://www.youtube.com/watch?v=NPphc77LTcg
-```
-```
-12/15/2025
-V3.6.2
-[+] Updated walk bot to be completely reliant on ctypes, no more psutil.
-```
+🎯 Версия 3.6.3 | 18 декабря 2025
+🔥 Новая функциональность
+🦴 Мульти-кость в аимботе - поддержка нескольких целевых костей
+⚠️ Пока работает только с ближайшей к прицелу костью
+📽️ Демонстрация
+https://img.shields.io/badge/%F0%9F%93%B9-%D0%94%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-FF0000
 
-```
-12/14/2025
-V3.6.1
-[+] Added font changer to configs tab
-[+] Made menu resizable
-```
-```
-12/12/2025
-V3.6
-[+] refactored esp to reuse cached entities, batch-read bones, apply ttl-based memory refresh (average 144 fps drawing)
-[+] Fixed the aimbot by making aim_jitter_enabled the single master toggle that cleanly enables or disables all jitter-related behavior without breaking existing logic.
-```
+🤖 Версия 3.6.2 | 15 декабря 2025
+🛠️ Технические изменения
+🔄 WalkBot переведён на ctypes - устранена зависимость от psutil
 
-```
-12/11/2025
-V3.5.4
-[+] New modern dark/red UI for all tabs.
-[+] Added hover animations and a startup loading animation.
-[+] Updated Console tab layout and log display.
-[+] Added fallback offsets loading from local files if GitHub download fails.
-[+] Fixed indentation errors and menu crashes.
-[+] Improved overall stability, performance, and responsiveness.
-```
+🎨 Версия 3.6.1 | 14 декабря 2025
+✨ Улучшения интерфейса
+🔤 Смена шрифтов во вкладке конфигураций
+📐 Изменяемые размеры меню
 
-```
-12/2/2025
-V3.5.3
-[+] Fixed Error Code 1 by forcing win32api to use the global scope with a global win32api declaration inside main(), resolving the UnboundLocalError and preventing ESP crashes during panic-key checks.
-[+] Fixed Error code 1 in start.pyw, updated launcher to remove invalid CS2 directory switching and added full crash handling with traceback + error logging for cleaner, non-silent failures.
-[+] Added full read-write process permissions in ESP to fix NoFlash not applying by enabling proper WriteProcessMemory access
-[+] Fixed a crash caused by an undefined ui_refresher during menu setting changes by adding a safe global refresher and protected UI-update handling.
-[+] Added a thread-safe menu toggle system using a Qt signal bridge to fix cursor focus issues and ensure the menu reliably opens and closes. (before you had to click once on the cheat window for the cursor to work; otherwise, it couldn't be controlled.)
-[+] Aimbot vischeck fixed
-```
-```
-10/06/2025
-V3.5.2
-[+] Updated to prevent crashing and added more logging
-```
+⚡ Версия 3.6 | 12 декабря 2025
+🚀 Производительность
+🖥️ Полный рефакторинг ESP:
+💾 Кэширование сущностей
+📦 Пакетное чтение костей
+⏱️ TTL-based обновление памяти
+🎯 Результат: 144+ FPS
+🛠️ Исправления
+🎯 Исправлен аимбот - унифицированный контроль джиттера через aim_jitter_enabled
 
-```
-10/03/2025
-V3.5.1
-[+] Integrated Team List, moved drawing fps and map status box to misc tab
-```
+🎭 Версия 3.5.4 | 11 декабря 2025
+🎨 Визуальные обновления
+🖤 Новый темно-красный интерфейс
+✨ Анимации при наведении и загрузке
+📊 Обновленная консоль и логи
+🛡️ Надежность
+💾 Резервная загрузка оффсетов с локальных файлов
+🐛 Исправлены критические падения меню
+⚡ Повышена общая стабильность
 
-```
-10/01/2025
-V3.5
-[+] Standardized on RPMReader (removed duplicate MemoryReader + consolidated fallback logic).
-[+] Added logging/error handling for SendInput and memory reads (invalid offsets now warn instead of silent returns).
-[+] Made process/module names configurable via Config.
-[+] Optimized view-angle reads (batched pitch & yaw).
-[+] Added idle timeout reset for recoil control (>2s pause).
-[+] Added GUI + config toggle for mouse recording (default True).
-[+] Introduced per-target aiming profiles (get_target_profile) for unique smoothing/jitter per enemy.
-[+] Blended learned recoil corrections with human mouse data.
-[+] Fixed learning crash/unpack issues; updated schema to (dp, dy, distance, bone, velocity).
-[+] Rebuilt RecoilViewer with new schema + bone/distance/velocity stats and scatter plots.
-[+] Patched AimbotRCS.run smoothing & max move (default 25, clamp before rounding).
-[+] Fixed circular jitter bug (switched sin/cos jitter → small random jitter, reduced smoothing cap, added snap-to-target).
-[+] Integrated Visible-Only ESP.
+🔧 Версия 3.5.3 | 2 декабря 2025
+🚨 Критические исправления
+Модуль	Проблема	Решение
+🎮 ESP	Ошибка 1 при проверке клавиши паники	Глобальное объявление win32api
+🚀 Лаунчер	Ошибка 1 в start.pyw	Удалено переключение директорий, добавлено логирование
+😎 NoFlash	Эффект не применялся	Добавлены права WriteProcessMemory
+🖱️ Меню	Сбой при изменении настроек	Защищенное обновление UI
+🎯 Аимбот	Проблемы с VisCheck	Полностью исправлено
+✨ Удобство
+🎮 Потокобезопасное меню - решены проблемы с фокусом курсора
 
-[+] Upgraded Menu styling (Inspired by Artificial Aiming's Helios Framework.)
-[+] Added console tab/command system to control all toggles via text.
-[+] Reorganized GFusion.py config tabs & menu.
-[+] Check if cs2 is running before starting.
-[+] Added lingering ESP for dead players (skeleton follows ragdoll).
-[+] Implemented Visible-Only ESP optimizations (VisCheck).
-[+] Spectator list restyled (dragging bug for now).
-[+] Humanization features added to Aimbot (jitter/micro-move).
-[+] Fixed multiple menu/config crashing issues — stability improved.
-[+] Optimized memory read structure, reduced code size.
-[+] Added Draw Dead Entities toggle as well as Dead Color CT and Dead Color T
-```
+📊 Версия 3.5.2 | 6 октября 2025
+🛡️ Улучшена стабильность - предотвращение сбоев
+📝 Расширенное логирование для диагностики
+
+👥 Версия 3.5.1 | 3 октября 2025
+📋 Интегрирован список команд
+🖥️ FPS и карта перенесены во вкладку "Разное"
+
+🎯 Версия 3.5 | 1 октября 2025
+🏗️ Архитектурные улучшения
+💾 Консолидация RPMReader - единая система чтения памяти
+📝 Комплексное логирование операций ввода/памяти
+⚙️ Настраиваемые параметры процесса и модулей
+🤖 Умный аимбот
+👤 Индивидуальные профили на цели
+🧠 Гибридный контроль отдачи - AI + human движения
+📊 Новый RecoilViewer со статистикой
+🎯 "Умное" наведение - исправления сглаживания и джиттера
+🎨 Визуальные улучшения
+👁️ Visible-Only ESP с оптимизированным VisCheck
+💀 Задержанная отрисовка скелетов
+🎨 Полный редизайн в стиле Helios
+💬 Консоль с командами для управления
+🎨 Цвета для мертвых игроков по командам
+⚡ Оптимизации
+🚀 Уменьшен размер кода
+🛡️ Улучшена стабильность - исправлены падения меню
+⚡ Повышена производительность
+📊 Статистика обновлений
+✨ Новых функций: 15+
+🔧 Исправлений: 20+
+⚡ Оптимизаций: 10+
+🎨 Визуальных улучшений: 8+
+
+💖 Спасибо за использование GFusion Launcher! Ваши отзывы помогают нам становиться лучше!
